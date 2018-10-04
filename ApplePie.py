@@ -8,6 +8,8 @@ class ApplePie(object):
         self.flower = flower
         self.eggs = eggs
 
+        self.masa_jaja = 10
+
         self.mix()
         self.knead()
         self.bake()
@@ -23,3 +25,8 @@ class ApplePie(object):
     def bake(self):
         print("Baking " + str(self.eggs) + " eggs, " + str(self.flower) + " of flower, " + str(self.sugar)
               + " of sugar.")
+
+    def weight(self):
+        mass = ((self.sugar + self.flower + (self.eggs * self.masa_jaja)) / 100)
+        print("The pies mass is " + str(round(mass, 2)) + "kg")
+
